@@ -2,7 +2,7 @@ class rectangle3
 {
     public static void main(String args[])
     {
-        short base = 2;
+        byte base = 2;
         byte length = 8;
         byte hieght = 2;
 
