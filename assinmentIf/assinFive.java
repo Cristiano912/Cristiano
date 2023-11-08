@@ -9,7 +9,8 @@ class assinFive
     System.out.print("Please enter a vowel: ");
     String input = scan.nextLine();
     
-    if (input.length() == 1) {
+    if (input.length() == 1) 
+    {
       char charky = input.charAt(0);
       if (charky == 'a' || charky == 'e' || charky == 'i' || charky == 'o' || charky == 'u')
       {
