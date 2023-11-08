@@ -1,29 +1,26 @@
 import java.util.Scanner;
 
-class stringReverb
-{ 
-  public static void main(String args[])
+class stringReverb 
+{
+  public static void main(String args[]) 
   {
     Scanner scan = new Scanner(System.in);
 
-    System.out.print("Please enter somthing: ");
-    String name = scan.nextLine();
-    String revstring = "";
+    System.out.print("enter anything and i will reverse it and more with magic!: ");
+    String magic = scan.nextLine();
 
-    for(int i = name.length() -1; i > -1; i--)
+    for (int i = 0; i <= magic.length(); i++) 
     {
-      revstring = name.charAt()
+      for (int j = magic.length() - 1; j >= i; j--) 
+      {
+        System.out.print(magic.charAt(j));
+        if (j > i) 
+        {
+          System.out.print(" ");
+        }
+      }
+      System.out.println();
     }
-    int integer=stringNameIndexOf('1');
-    //for(int i=0; i<0; i++)
-    //{
-
-    //}
-    //reverse it
-
-    //print it
- 
+    System.out.print("Told you i have magic! ");
   }
 }
-
-
