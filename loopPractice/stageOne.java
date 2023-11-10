@@ -1,9 +1,17 @@
+import java.util.Scanner;
 class stageOne
 {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
-     
-      string name = cristo;
-      bool boolean = name.contains('c');
+      Scanner scan = new Scanner(System.in);
+
+    System.out.print("Enter a number!: ");
+    int num = scan.nextInt();
+    long factorial = 1;
+    for(int i = 1; i <= num; i++)
+    {
+      factorial *= i;
+    }
+    System.out.print("factorial of " + num + " is " + factorial);
     }
 }
