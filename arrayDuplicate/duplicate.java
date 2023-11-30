@@ -7,21 +7,23 @@ class duplicate
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Please enter up to 25 values: ");
-        int[] values = new int[25];
-        int size = 0;
+        int[] values = new int[5];
+        int size = 5;
         boolean flag = false;
         int index = -1;
         int i = 0;
 
-        while(!flag && size < values.length )
+        for(int q = 0; q < size; q++)
         {
-            
             int userInput = scan.nextInt();
+            values[q] = userInput;
+        }
 
-           
-            values[size] = userInput;
-            i++;
+        //System.out.print("Completed");
 
+        while(!flag && i < values.length)
+        {
+            //System.out.print("Entered Outside");
             for(int j = i + 1; j < size; j++ )
             {
                 
@@ -36,7 +38,7 @@ class duplicate
         }
         if (flag) 
         {
-            System.out.print("theres a dupe! the first dupe to apear was" + values[index]);
+            System.out.print("theres a dupe! the first dupe to apear was " + values[index]);
         }
     }
 }
