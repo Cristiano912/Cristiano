@@ -42,6 +42,7 @@ class duplicate
         }
     }
 }
+
 //Ms. Lindsey
 //Define Scanner
 //Define an array to be size 25
