@@ -1,35 +1,43 @@
 import java.util.Scanner;
-import java.util.Random;
 class stageFour
 {
   public static void main(String args[])
   {
         Scanner scan = new Scanner(System.in);
-        Random random = new Random();
-        int rando = random.nextInt(10) + 1;
-        System.out.print("guess a number ");
          
-        int inputGuess;
-        boolean correct = false;
+        int num = 0;
+        System.out.print("enter a number ");
 
-        while(!correct)
+        if(scan.hasNextInt())
         {
-            inputGuess = scan.nextInt();
-          
+            int smallest = scan.nextInt();
+            int largest = smallest;  
+            char choice = 'y';
+
+            while(choice == 'y')
+            {
+                System.out.print("keep typing numbers if you want to but type n to stop");
+
+                if(scan.hasNextInt())
+                {
+                    num = scan.nextInt();
+                }
+                if(num < smallest)
+                {
+                    smallest = num;
+                }
+                if(num > largest)
+                {
+                    largest = num;
+                }
+                 System.out.print("are you done entering values y/n");
+                 choice = scan.next().charAt(0);
+            
+            System.out.print("the largest number entered was " + largest);
+            System.out.print("the smallest number entered was " + smallest);
+            }
+        }
         
-        if(inputGuess > rando)
-        {
-             System.out.print("to high, guess again ");
-        }
-       else if (inputGuess  < rando)
-        {
-             System.out.print("to low, guess again ");
-        }
-        else
-        {
-             System.out.print("congrats you win!");
-             correct = true;
-        } 
-        }
+        
     }
 }
