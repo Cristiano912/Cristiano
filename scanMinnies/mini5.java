@@ -1,18 +1,22 @@
 import java.util.Scanner;
-class mini1
+class mini5
 {
   public static void main(String args[])
   {
         Scanner scan = new Scanner(System.in);
          
-        System.out.print("enter a number ");
-        int num1 = scan.nextInt();
+        System.out.print("enter amount ");
+        int amount = scan.nextInt();
 
-        System.out.print("enter a number ");
-        int num2 = scan.nextInt();
+        System.out.print("enter anual interest rate  ");
+        int interest = scan.nextInt();
 
-        int sum = num1 + num2;
-       System.out.print(sum ); 
+        System.out.print("enter time in years ");
+        int time = scan.nextInt();
+        
+        int simpleInterest = (amount * interest * time) / 100;
+        
+        System.out.print("simple interest " + simpleInterest);
 
   }
 }
