@@ -85,7 +85,7 @@ class chessBoard
             {
                 System.out.print(array[r][c]);
             }
-            System.out.println(array[r][c]);
+             System.out.println();
         }
         
     }
