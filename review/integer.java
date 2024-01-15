@@ -4,16 +4,15 @@ class integer
 {
     public static void main(String args[])
     {
-        Scanner scan = new scanner();
-        int number = scan.;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("enter an number: ");
+        int number = scan.nextInt();
 
         for(int i = 1; i <= 10; i++ )
         {
-            var result = number * i;
-            System.out.print(result);
+            int result = number * i;
+            System.out.println(number + " * " + i + " = " + result );
         }
     }
 }
 
-// line 6 ~ what are you reading in, what data type
-// line 10 ~ data types
