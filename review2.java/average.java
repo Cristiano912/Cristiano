@@ -8,7 +8,7 @@ class average
 
         System.out.print("enter size of array:");
         
-        int size = scan.nextInt();
+        int size = scan.nextInt(2);
         int[] arr = new int[size];
 
         System.out.print("enter elements:");
