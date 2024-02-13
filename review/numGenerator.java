@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-class integer
+class numGenerator
 {
     public static void main(String args[])
     {
